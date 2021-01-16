@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    ports: 
+      - 9000:9000
+    volumes: 
+      - ./backend:/app
+    networks: 
+      - weatherapp_net
+
+  frontend:
+    build: ./frontend
+    ports: 
+      - 8000:8000
+    environment: 
+      - ENDPOINT=http://localhost:9000/api
+    volumes:
+      - ./frontend:/app
+    networks: 
+      - weatherapp_net
+
+networks:
+  weatherapp_net:
+    driver: bridge
