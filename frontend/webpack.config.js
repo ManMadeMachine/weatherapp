@@ -34,7 +34,7 @@ module.exports = {
     publicPath: '/',
   },
   watchOptions: {
-    poll: true
+    poll: true,
   },
   module: {
     rules: [
@@ -54,7 +54,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },

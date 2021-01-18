@@ -18,10 +18,6 @@ body{
   height: 10vw;
 }
 
-.error {
-  color: red
-}
-
 .forecast {
   display: flex;
   flex-direction: row;

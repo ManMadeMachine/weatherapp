@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  test:
+    network_mode: host
+    image: ypasmk/robot-framework
+    environment: 
+      USERNAME: Eetu Suonpää
+    volumes:
+      - ./output:/output
+      - ./tests:/tests
+      - ./reports:/reports

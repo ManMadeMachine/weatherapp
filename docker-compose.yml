@@ -15,7 +15,7 @@ services:
     ports: 
       - 8000:8000
     environment: 
-      - ENDPOINT=http://localhost:9000/api
+      - ENDPOINT=http://localhost:9000/api 
     volumes:
       - ./frontend:/app
     networks: 
