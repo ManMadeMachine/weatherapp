@@ -61,7 +61,7 @@ Here are some things in different categories that you can do to make the app bet
 *Test automation is key in developing good quality applications. Finding bugs in early stages of development is valuable in any software development project. With Robot Framework you can create integration tests that also serve as feature descriptions, making them exceptionally useful.*
 
 * Create automated tests for the application. (tip: [mocha](https://mochajs.org/))
-    * Update 18.1.2020: The frontend now has unit tests to showcase the principle. There could still be more unit tests and also tests for the backend as well. 
+    * Update 18.1.2020: The frontend now has unit tests to showcase the principle. There could still be more unit tests and also tests for the backend as well. Run the tests by running `npm run test:unit` in the `frontend` folder to test frontend. 
 
 * Create [Robot Framework](http://robotframework.org/) integration tests. Hint: Start by creating a third container that gives expected weather data and direct the backend queries there by redefining the **MAP_ENDPOINT**.
     * Update 18.1.2020: For clarity, the Robot tests live in `/robot`, where there is a Dockerfile and docker-compose. There is a folder structure in place for tests. However, there were some difficulties in getting RF to work in Docker, so this is still unfinished. The idea was to run RF tests in docker containers and get the output from tests into a dedicated folder. I was supposed to create a test that opens Chrome, navigates to the site and checks that the image on the site (current weather) is the correct one (img src="01.svg" for example), returned by the mocked endpoint 

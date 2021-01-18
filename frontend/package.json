@@ -11,7 +11,7 @@
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --config webpack.config.js --inline --colors",
     "lint": "node_modules/.bin/eslint --ext .js --ext .jsx .",
-    "test:unit": "mocha --require @babel/register --require dotenv/config"
+    "test:unit": "mocha --require @babel/register --require ./test/mocha.env.js --require dotenv/config"
   },
   "dependencies": {
     "react": "^16.13.1",
